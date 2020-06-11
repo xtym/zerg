@@ -7,10 +7,14 @@ namespace app\api\controller\v1;
 // Request::instance()->post();//获取post形式的参数
 // Request::instance()->param();//获取所有参数
 // input('param.');//助手函数获取所有param参数
-
-use app\api\validate\IDMustBePositiveInt;
 use think\Request;
 use think\Validate;
+use think\Exception;
+
+use app\api\validate\IDMustBePositiveInt;
+use app\api\model\Banner as BannerModel;
+use app\lib\exception\BannerMissException;
+
 
 class Banner
 {
@@ -21,10 +25,12 @@ class Banner
      * @$id 
      */
     public function getBanner($id){
-
-        $validator = new IDMustBePositiveInt();
-        $validator->goCheck();
-        
-        
+        (new IDMustBePositiveInt())->goCheck();
+        $banner = BannerModel::getBannerByID($id);
+        if(!$banner){
+            throw new BannerMissException();
+        }
+        $c = config('setting.img_prefix');
+        return $banner;
     }
 }

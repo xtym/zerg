@@ -23,11 +23,23 @@ class Theme
     public function getSimpleList($ids){
         (new IDCollection())->goCheck();
         $ids= explode(',',$ids);
-        $result = ThemeModel::with(['topicImg','headImg'])->select($ids);
-        if(!$result){
+        $themes = ThemeModel::with(['topicImg','headImg'])->select($ids);
+        if($themes->isEmpty()){
             throw new ThemeException();
         }
-        return $result;
+        return $themes;
+    }
+
+    /**
+     * @url /theme/:id
+     */
+    public function getComplexOne($id){
+        (new IDMustBePositiveInt())->goCheck();
+        $theme = ThemeModel::getThemeWithProducts($id);
+        if(!$theme){
+            throw new ThemeException();
+        }
+        return $theme;
     }
    
 }

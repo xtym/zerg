@@ -19,7 +19,7 @@ use think\Route;
 Route::get('api/:version/banner/:id','api/:version.Banner/getBanner');
 //主题
 Route::get('api/:version/theme','api/:version.Theme/getSimpleList');
-Route::get('api/:version/theme/:id','api/:version.Theme/getComplexOne');
+Route::get('api/:version/theme/:id','api/:version.Theme/getComplexOne',[],['id'=>'\d+']);
 //产品
 Route::group('api/:version/product',function(){
     Route::get('/recent','api/:version.Product/getRecent');
@@ -39,3 +39,4 @@ Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress')
 Route::post('api/:version/order','api/:version.Order/placeOrder');
 //支付
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
+Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');

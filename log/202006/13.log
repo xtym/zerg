@@ -1,0 +1,132 @@
+[ 2020-06-13T10:44:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.902649s][吞吐率：1.11req/s] [内存消耗：2,662.64kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044799s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007013s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oKEeR4h-8rYgrJekDv2eptUPAm58' LIMIT 1 [ RunTime:0.002626s ]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:44:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.428158s][吞吐率：2.34req/s] [内存消耗：2,662.65kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000876s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006030s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oKEeR4h-8rYgrJekDv2eptUPAm58' LIMIT 1 [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:44:47+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.540974s][吞吐率：1.85req/s] [内存消耗：1,876.34kb] [文件加载：49]
+[ error ] [400][D:\xampp\htdocs\zerg\application\api\validate\OrderPlace.php:34]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:46:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.439947s][吞吐率：2.27req/s] [内存消耗：1,876.34kb] [文件加载：49]
+[ error ] [400][D:\xampp\htdocs\zerg\application\api\validate\OrderPlace.php:34]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:48:50+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：87.567591s][吞吐率：0.01req/s] [内存消耗：1,896.40kb] [文件加载：49]
+[ error ] [400][D:\xampp\htdocs\zerg\application\api\validate\OrderPlace.php:34]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:48:56+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.134414s][吞吐率：7.44req/s] [内存消耗：3,018.23kb] [文件加载：58]
+[ error ] [2]Missing argument 1 for think\db\Query::with()[D:\xampp\htdocs\zerg\thinkphp\library\think\db\Query.php:1866]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:51:16+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.064933s][吞吐率：15.40req/s] [内存消耗：3,008.25kb] [文件加载：57]
+[ error ] [0]method not exist:think\db\Query->all[D:\xampp\htdocs\zerg\thinkphp\library\think\db\Query.php:93]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:51:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.043770s][吞吐率：22.85req/s] [内存消耗：1,904.80kb] [文件加载：48]
+[ error ] [4]语法错误: unexpected '>'[D:\xampp\htdocs\zerg\application\api\service\Order.php:179]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:52:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.045999s][吞吐率：21.74req/s] [内存消耗：1,904.80kb] [文件加载：48]
+[ error ] [4]语法错误: unexpected '>'[D:\xampp\htdocs\zerg\application\api\service\Order.php:179]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:52:43+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.140962s][吞吐率：7.09req/s] [内存消耗：3,171.67kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011513s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.014716s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.006794s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.014492s ]
+[ error ] [8]Undefined property: app\api\service\Order::$product[D:\xampp\htdocs\zerg\application\api\service\Order.php:92]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:53:53+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.129129s][吞吐率：7.74req/s] [内存消耗：3,208.43kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011285s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005992s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.005988s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008339s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'total_price' cannot be null[D:\xampp\htdocs\zerg\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:59:34+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：238.796721s][吞吐率：0.00req/s] [内存消耗：3,233.35kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006054s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.020770s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006617s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'total_price' cannot be null[D:\xampp\htdocs\zerg\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2020-06-13T10:59:44+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：4.223544s][吞吐率：0.24req/s] [内存消耗：3,178.48kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005887s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.006212s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006240s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items`) VALUES (1 , 'D613171842091787' , 0.02 , 2 , 'http://z.cn/public/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"huahua\",\"mobile\":\"15179808492\",\"province\":\"\\u6253\\u51fb\\u5bf9\\u65b9\",\"city\":\"\\u95f4\\u9699\",\"country\":\"\\u4e2d\\u56fd\",\"detail\":\"\\u4e0a\\u7684\\u5065\\u5eb7\\u7684\\u51cf\\u80a5\",\"delete_time\":null,\"user_id\":1,\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":1,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.01},{\"id\":2,\"haveStock\":true,\"count\":1,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.01}]') [ RunTime:0.070689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.006502s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 1 , 1) [ RunTime:0.037286s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 1 , 1) [ RunTime:0.000453s ]
+
+---------------------------------------------------------------
+[ 2020-06-13T11:03:05+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.080255s][吞吐率：12.46req/s] [内存消耗：3,086.00kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010528s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006041s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000765s ]
+
+---------------------------------------------------------------
+[ 2020-06-13T11:09:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.240869s][吞吐率：4.15req/s] [内存消耗：3,178.59kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005904s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.006139s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006067s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'D613177655739730' , 0.02 , 2 , 'http://z.cn/public/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"huahua\",\"mobile\":\"15179808492\",\"province\":\"\\u6253\\u51fb\\u5bf9\\u65b9\",\"city\":\"\\u95f4\\u9699\",\"country\":\"\\u4e2d\\u56fd\",\"detail\":\"\\u4e0a\\u7684\\u5065\\u5eb7\\u7684\\u51cf\\u80a5\",\"delete_time\":null,\"user_id\":1,\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":1,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.01},{\"id\":2,\"haveStock\":true,\"count\":1,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.01}]' , 1592017765 , 1592017765) [ RunTime:0.082751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.005880s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 1 , 2) [ RunTime:0.011164s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 1 , 2) [ RunTime:0.000322s ]
+
+---------------------------------------------------------------
+[ 2020-06-13T11:18:08+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.194705s][吞吐率：5.14req/s] [内存消耗：3,210.54kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010949s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006078s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.006172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009418s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'D613182888345752' , 0.02 , 2 , 'http://z.cn/public/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"huahua\",\"mobile\":\"15179808492\",\"province\":\"\\u6253\\u51fb\\u5bf9\\u65b9\",\"city\":\"\\u95f4\\u9699\",\"country\":\"\\u4e2d\\u56fd\",\"detail\":\"\\u4e0a\\u7684\\u5065\\u5eb7\\u7684\\u51cf\\u80a5\",\"delete_time\":null,\"user_id\":1,\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":1,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.01},{\"id\":2,\"haveStock\":true,\"count\":1,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.01}]' , 1592018288 , 1592018288) [ RunTime:0.009760s ]
+[ error ] [2]Division by zero[D:\xampp\htdocs\zerg\application\api\service\Order.php:54]
+
+---------------------------------------------------------------
+[ 2020-06-13T11:20:21+08:00 ] [ error ] [2]Division by zero
+[ error ] Division by zero
+
+---------------------------------------------------------------
